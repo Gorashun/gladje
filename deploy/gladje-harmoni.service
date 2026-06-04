@@ -1,0 +1,38 @@
+[Unit]
+Description=Glädje & Harmoni Node.js Server
+Documentation=https://github.com/YOUR_ORG/gladje
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/gladje/server
+
+# Load .env file
+EnvironmentFile=/var/www/gladje/server/.env
+
+ExecStart=/usr/bin/node index.js
+ExecReload=/bin/kill -HUP $MAINPID
+
+# Restart on failure with backoff
+Restart=on-failure
+RestartSec=10
+StartLimitInterval=60
+StartLimitBurst=3
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=gladje-harmoni
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/www/gladje/server/data
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
