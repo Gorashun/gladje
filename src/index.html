@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glädje & Harmoni – det svenska longevity-verktyget. Ta vårt vetenskapligt baserade quiz och ta reda på hur du kan leva längre och mår bättre.">
+  <meta property="og:title" content="Glädje & Harmoni – Ditt personliga longevity-verktyg">
+  <meta property="og:description" content="Ta vårt gratis longevity-quiz och få en personlig analys av dina hälsovanor.">
+  <meta property="og:type" content="website">
+  <title>Glädje & Harmoni – Lev längre, mår bättre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="/" class="navbar__logo" aria-label="Glädje & Harmoni – startsida">
+            <span class="navbar__logo-leaf" aria-hidden="true">🌿</span>
+            <span>Glädje & Harmoni</span>
+          </a>
+          <div class="navbar__nav" role="list">
+            <a href="#longevity" role="listitem">Om Longevity</a>
+            <a href="articles.html" role="listitem">Artiklar</a>
+            <a href="quiz.html" role="listitem">Ta quizet</a>
+          </div>
+          <a href="quiz.html" class="btn btn--primary btn--sm navbar__cta">Ta quizet →</a>
+          <button class="navbar__burger" aria-label="Öppna meny" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="navbar__mobile-menu" aria-label="Mobilmeny">
+          <a href="#longevity">Om Longevity</a>
+          <a href="articles.html">Artiklar</a>
+          <a href="quiz.html">Ta quizet</a>
+          <a href="quiz.html" class="btn btn--primary" style="margin:1rem 1.25rem;width:calc(100% - 2.5rem)">Ta quizet →</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="hero__tag">🇸🇪 Gratis longevity-quiz</span>
+            <h1 class="hero__title" id="hero-title">
+              Hur länge kommer<br>
+              <em>du</em> att leva?
+            </h1>
+            <p class="hero__subtitle">
+              Svara på 15 frågor om dina levnadsvanor och få en personlig longevity-analys baserad på den senaste vetenskapen. Gratis, på svenska, på 3 minuter.
+            </p>
+            <div class="hero__cta-group">
+              <a href="quiz.html" class="btn btn--gold btn--lg">
+                Ta vårt longevity-quiz →
+              </a>
+              <a href="#longevity" class="btn btn--secondary btn--lg">
+                Läs mer
+              </a>
+            </div>
+            <p class="hero__note">✓ Gratis &nbsp;·&nbsp; ✓ 3 minuter &nbsp;·&nbsp; ✓ Personlig rapport</p>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__circle">🌿</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATISTIK ===== -->
+    <section class="section section--alt" aria-label="Statistik">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-stat">
+            <div class="trust-stat__num" data-count="15000">0</div>
+            <div class="trust-stat__label">Genomförda quiz</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-stat__num" data-count="87">0<span>%</span></div>
+            <div class="trust-stat__label">Rapporterar förbättrade vanor</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-stat__num">15</div>
+            <div class="trust-stat__label">Vetenskapliga parametrar</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-stat__num">3 min</div>
+            <div class="trust-stat__label">Tar quizet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FÖRDELAR ===== -->
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Varför välja oss</span>
+          <h2 class="section__title" id="benefits-title">Tre anledningar att ta quizet idag</h2>
+          <p class="section__subtitle">Vi hjälper dig att förstå din longevity-profil med enkla, evidensbaserade insikter.</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🎯</div>
+            <h3 class="benefit__title">Personlig analys</h3>
+            <p class="benefit__text">Inte en generell lista – du får en analys skräddarsydd efter just dina svar och din livsstil.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🔬</div>
+            <h3 class="benefit__title">Vetenskapligt baserat</h3>
+            <p class="benefit__text">Våra frågor bygger på forskning från Blue Zones, epigenetik och modern gerontologi.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">⚡</div>
+            <h3 class="benefit__title">Gratis och snabbt</h3>
+            <p class="benefit__text">15 frågor på under 3 minuter. Inget konto krävs – ta quizet och få ditt resultat direkt.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🌿</div>
+            <h3 class="benefit__title">Holistisk syn</h3>
+            <p class="benefit__text">Vi mäter kropp, sinne och socialt välmående – för longevity handlar om hela livet.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">📋</div>
+            <h3 class="benefit__title">Konkreta råd</h3>
+            <p class="benefit__text">Du får specifika, genomförbara rekommendationer – inte vaga tips.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🔒</div>
+            <h3 class="benefit__title">GDPR-säkert</h3>
+            <p class="benefit__text">Dina data behandlas enligt EU:s dataskyddsförordning. Du väljer själv om du vill dela din e-post.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OM LONGEVITY ===== -->
+    <section class="section section--alt" id="longevity" aria-labelledby="longevity-title">
+      <div class="container">
+        <div class="hero__inner" style="gap: var(--space-12);">
+          <div>
+            <span class="section__label">Vad är longevity?</span>
+            <h2 class="section__title" id="longevity-title" style="text-align:left;">Vetenskapen om ett längre, friskare liv</h2>
+            <p style="font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-5);">
+              Longevity – på svenska <em>livslängd</em> – är studiet av vad som gör att vissa människor lever längre och friskare. Det handlar inte om att undvika döden, utan om att maximera de år vi har.
+            </p>
+            <p style="font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-5);">
+              Forskning från de s.k. <strong>Blue Zones</strong> – regioner där ovanligt många når 100 år – visar att kost, rörelse, sociala band och mening är de viktigaste faktorerna. Genetik spelar en roll, men din livsstil avgör upp till <strong>80 % av din faktiska livslängd</strong>.
+            </p>
+            <p style="font-size:var(--text-lg); color:var(--color-text-muted);">
+              Glädje & Harmoni hjälper dig att förstå var du står och vad du kan göra för att förbättra din longevity – steg för steg, utan att det behöver vara svårt.
+            </p>
+            <div style="margin-top:var(--space-6);">
+              <a href="quiz.html" class="btn btn--primary btn--lg">Starta ditt quiz</a>
+            </div>
+          </div>
+          <div aria-hidden="true" style="display:flex;justify-content:center;align-items:center;">
+            <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="160" cy="160" r="150" fill="#4a7c59" fill-opacity="0.08" stroke="#4a7c59" stroke-width="2" stroke-opacity="0.2"/>
+              <circle cx="160" cy="160" r="110" fill="#4a7c59" fill-opacity="0.08" stroke="#4a7c59" stroke-width="1.5" stroke-opacity="0.15"/>
+              <circle cx="160" cy="160" r="70"  fill="#4a7c59" fill-opacity="0.12"/>
+              <!-- Löv -->
+              <path d="M160 100 C130 120 120 155 160 175 C200 155 190 120 160 100Z" fill="#4a7c59" fill-opacity="0.6"/>
+              <line x1="160" y1="175" x2="160" y2="210" stroke="#4a7c59" stroke-width="2" stroke-opacity="0.5"/>
+              <!-- Cirklar runt -->
+              <circle cx="160" cy="55"  r="8" fill="#c9a84c" fill-opacity="0.7"/>
+              <circle cx="255" cy="115" r="6" fill="#7fb069" fill-opacity="0.7"/>
+              <circle cx="265" cy="205" r="8" fill="#c9a84c" fill-opacity="0.5"/>
+              <circle cx="160" cy="265" r="6" fill="#7fb069" fill-opacity="0.7"/>
+              <circle cx="55"  cy="205" r="8" fill="#4a7c59" fill-opacity="0.6"/>
+              <circle cx="55"  cy="115" r="6" fill="#c9a84c" fill-opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUIZ PREVIEW ===== -->
+    <section class="section" id="quiz-preview" aria-labelledby="preview-title">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="section__label">Quiz-förhandsvisning</span>
+          <h2 class="section__title" id="preview-title">Exempelfrågor ur quizet</h2>
+          <p class="section__subtitle">15 frågor som täcker alla aspekter av din hälsa och livsstil.</p>
+        </div>
+        <div class="quiz-preview">
+          <div class="quiz-preview__item">
+            <span class="quiz-preview__num" aria-hidden="true">1</span>
+            <span class="quiz-preview__q">Hur många gånger tränar du per vecka?</span>
+          </div>
+          <div class="quiz-preview__item">
+            <span class="quiz-preview__num" aria-hidden="true">2</span>
+            <span class="quiz-preview__q">Hur hanterar du stress i vardagen?</span>
+          </div>
+          <div class="quiz-preview__item">
+            <span class="quiz-preview__num" aria-hidden="true">3</span>
+            <span class="quiz-preview__q">Hur starka är dina sociala band och relationer?</span>
+          </div>
+          <div class="quiz-preview__item" style="opacity:0.5;">
+            <span class="quiz-preview__num" aria-hidden="true">…</span>
+            <span class="quiz-preview__q">Och 12 frågor till om kost, sömn, hjärnhälsa m.m.</span>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <a href="quiz.html" class="btn btn--primary btn--lg">Ta hela quizet nu →</a>
+          <p style="margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);">Ca 3 minuter · Gratis · Ingen registrering krävs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTIKLAR ===== -->
+    <section class="section section--alt" id="articles" aria-labelledby="articles-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Kunskap</span>
+          <h2 class="section__title" id="articles-title">Senaste artiklarna</h2>
+          <p class="section__subtitle">Evidensbaserade artiklar om kost, träning, sömn och mental hälsa.</p>
+        </div>
+        <div class="articles-grid">
+          <article class="card article-card" data-cat="kost">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#7fb069,#4a7c59);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🥦</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Kost</span>
+                <span>5 min läsning</span>
+              </div>
+              <h3 class="card__title">Medelhavskosten och dess effekt på livslängden</h3>
+              <p class="card__excerpt">Forskning visar att medelhavskosten minskar risken för hjärt-kärlsjukdomar med upp till 30 %. Så här lägger du om din kost steg för steg.</p>
+              <a href="article.html?slug=medelhavskost" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+          <article class="card article-card" data-cat="traning">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#c9a84c,#a8893e);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🏃</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--gold">Träning</span>
+                <span>4 min läsning</span>
+              </div>
+              <h3 class="card__title">150 minuter per vecka – varför det är magiska siffran</h3>
+              <p class="card__excerpt">WHO:s rekommendation om 150 minuter måttlig träning per vecka är inte godtycklig. Här är vetenskapen bakom rekommendationen.</p>
+              <a href="article.html?slug=150-minuter" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+          <article class="card article-card" data-cat="somn">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#4a7c59,#2e5236);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">😴</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Sömn</span>
+                <span>6 min läsning</span>
+              </div>
+              <h3 class="card__title">Sömnens roll i cellreparation och åldrande</h3>
+              <p class="card__excerpt">Under djupsömnen reparerar kroppen DNA-skador och rensar bort avfallsprodukter från hjärnan. Så optimerar du din sömn.</p>
+              <a href="article.html?slug=somn-aldrande" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:var(--space-8);">
+          <a href="articles.html" class="btn btn--secondary">Se alla artiklar →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CITAT / TRUST ===== -->
+    <section class="section" aria-label="Citat och forskning">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="section__label">Forskning</span>
+          <h2 class="section__title">Vad säger vetenskapen?</h2>
+        </div>
+        <div style="display:grid;gap:var(--space-5);">
+          <blockquote class="trust-quote">
+            "Genetik styr ungefär 20–25 % av hur länge vi lever. Resten avgörs av vår livsstil och vår miljö."
+            <cite>— Studie i Nature Aging, 2023</cite>
+          </blockquote>
+          <blockquote class="trust-quote">
+            "Regelbunden motion, god sömn och starka sociala relationer är de tre faktorer som konsekvent förknippas med ett längre och friskare liv."
+            <cite>— Harvard Study of Adult Development (80-årig studie)</cite>
+          </blockquote>
+          <blockquote class="trust-quote">
+            "Invånare i Blue Zones äter till 80 % grönsaker, har starkt syfte med livet och prioriterar gemenskap framför individuella prestationer."
+            <cite>— Dan Buettner, Blue Zones Project</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="section section--dark" aria-labelledby="cta-title">
+      <div class="container" style="text-align:center;">
+        <span class="section__label" style="color:var(--color-primary-light)">Redo att börja?</span>
+        <h2 class="section__title" id="cta-title" style="color:var(--color-white);">Ta ditt longevity-quiz idag</h2>
+        <p class="section__subtitle" style="color:rgba(255,255,255,0.7);margin-bottom:var(--space-8);">
+          3 minuter kan förändra hur du ser på din hälsa. Gratis, på svenska, inga dolda avgifter.
+        </p>
+        <a href="quiz.html" class="btn btn--gold btn--lg">Starta quizet nu →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">🌿 Glädje & Harmoni</div>
+          <p class="footer__tagline">Det svenska longevity-verktyget för ett längre, friskare och mer meningsfullt liv.</p>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.4);">Stockholm, Sverige</p>
+        </div>
+        <div class="footer__col">
+          <h4>Verktyg</h4>
+          <ul>
+            <li><a href="quiz.html">Longevity-quiz</a></li>
+            <li><a href="results.html">Ditt resultat</a></li>
+            <li><a href="articles.html">Artiklar</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#longevity">Om longevity</a></li>
+            <li><a href="privacy.html">Integritetspolicy</a></li>
+            <li><a href="privacy.html#cookies">Cookie-policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="mailto:hej@gladjeochharmoni.se">hej@gladjeochharmoni.se</a></li>
+            <li><a href="privacy.html#dataskydd">Dataskyddsombud</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__gdpr">
+        <strong>Dataskydd:</strong> Glädje & Harmoni behandlar personuppgifter i enlighet med EU:s dataskyddsförordning (GDPR). Vi samlar inte in personuppgifter utan ditt samtycke. Du har rätt att begära ut, korrigera eller radera dina uppgifter. För mer information, se vår <a href="privacy.html" style="color:var(--color-primary-light)">integritetspolicy</a>.
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2024 Glädje & Harmoni. Alla rättigheter förbehållna.</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Integritetspolicy</a>
+          <a href="privacy.html#cookies">Cookies</a>
+          <a href="mailto:hej@gladjeochharmoni.se">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

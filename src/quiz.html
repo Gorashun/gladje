@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ta Glädje & Harmonis longevity-quiz – 15 frågor om din hälsa och livsstil. Gratis, på svenska, tar 3 minuter.">
+  <title>Longevity-quiz – Glädje & Harmoni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="quiz-page">
+
+  <!-- HEADER -->
+  <header class="quiz-header">
+    <div class="container">
+      <div class="quiz-header__inner">
+        <a href="/" class="quiz-header__logo" aria-label="Glädje & Harmoni – startsida">
+          🌿 Glädje & Harmoni
+        </a>
+        <span class="quiz-header__counter" aria-live="polite" aria-atomic="true">Fråga 1 av 15</span>
+      </div>
+    </div>
+    <div class="quiz-progress container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quiz-framsteg">
+      <div class="progress-bar">
+        <div class="progress-bar__fill" style="width:0%"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LOADING -->
+  <div id="loading-overlay" class="loading-overlay hidden" role="status" aria-live="polite">
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <p class="loading-text">Beräknar din longevity…</p>
+    <p class="loading-sub">Vi analyserar dina svar</p>
+  </div>
+
+  <!-- QUIZ-MAIN -->
+  <main class="quiz-main" id="quiz-main">
+    <div class="container">
+
+      <!-- QUIZ CARD (fylls av JS) -->
+      <div id="quiz-card" class="quiz-card" role="main"></div>
+
+      <!-- OPT-IN SEKTION -->
+      <div id="optin-section" class="optin-box" style="display:none;" aria-labelledby="optin-title">
+        <div class="optin-box__icon" aria-hidden="true">📬</div>
+        <p id="optin-preview-cat" class="badge badge--green" style="display:block;text-align:center;margin:0 auto var(--space-4);font-size:var(--text-sm);">
+          Din preliminära kategori beräknas…
+        </p>
+        <h1 class="optin-box__title" id="optin-title">Din fullständiga analys väntar!</h1>
+        <p class="optin-box__subtitle">
+          Vill du ta emot din detaljerade longevity-rapport med personliga råd och vetenskapliga förklaringar via e-post?
+        </p>
+
+        <form id="optin-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="optin-name">
+              Förnamn <span class="optional">(frivilligt)</span>
+            </label>
+            <input type="text" id="optin-name" name="firstName" class="form-input"
+              placeholder="Ditt förnamn" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="optin-email">
+              E-postadress <span style="color:var(--color-error)">*</span>
+            </label>
+            <input type="email" id="optin-email" name="email" class="form-input"
+              placeholder="din@email.se" autocomplete="email" required>
+            <span id="optin-email-error" class="form-error" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" id="optin-consent" name="consent" required>
+              <span class="form-checkbox__label">
+                Ja, jag vill ta emot min personliga longevity-rapport och inspirerande tips om hälsa och välmående. Jag förstår att jag kan avregistrera mig när som helst genom att klicka på länken i e-posten.
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;">
+            Skicka min rapport ✉️
+          </button>
+        </form>
+
+        <a href="#" id="optin-skip" class="optin-box__skip">
+          Visa resultat utan e-post →
+        </a>
+
+        <p class="optin-box__gdpr">
+          🔒 Vi behandlar dina uppgifter enligt GDPR. Din e-post används enbart för att skicka din rapport och eventuella framtida tips – aldrig säljs till tredje part. Läs vår <a href="privacy.html">integritetspolicy</a>.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="padding:var(--space-6) 0;border-top:1px solid var(--color-border);background:var(--color-white);">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-3);">
+      <span style="font-size:var(--text-xs);color:var(--color-text-light);">© 2024 Glädje & Harmoni</span>
+      <div style="display:flex;gap:var(--space-4);">
+        <a href="privacy.html" style="font-size:var(--text-xs);color:var(--color-text-muted);">Integritetspolicy</a>
+        <a href="privacy.html#cookies" style="font-size:var(--text-xs);color:var(--color-text-muted);">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
