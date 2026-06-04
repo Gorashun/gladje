@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ditt longevity-resultat – Glädje & Harmoni. Se din personliga analys och top 3 rekommendationer.">
-  <title>Ditt Longevity-Resultat – Glädje & Harmoni</title>
+  <title>Ditt longevity-resultat – Glädje & Harmoni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -88,7 +88,7 @@
         <span class="section__label">Nästa steg</span>
         <h2 class="section__title">Vad gör du nu?</h2>
         <p style="color:var(--color-text-muted);margin-bottom:var(--space-8);">
-          Longevity-resan börjar med ett steg. Utforska våra artiklar, dela resultatet med en vän eller ta quizet igen om 3 månader för att mäta din progress.
+          Longevity-resan börjar med ett steg. Utforska våra artiklar, dela resultatet med en vän eller ta quizet igen om 3 månader för att följa din framsteg.
         </p>
         <div style="display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center;">
           <a href="articles.html" class="btn btn--primary btn--lg">📚 Läs longevity-artiklar</a>
@@ -111,7 +111,7 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__bottom" style="border-top:none;">
-        <span class="footer__copy">© 2024 Glädje & Harmoni</span>
+        <span class="footer__copy">© 2026 Glädje & Harmoni</span>
         <div class="footer__legal">
           <a href="privacy.html">Integritetspolicy</a>
           <a href="privacy.html#cookies">Cookies</a>
@@ -128,21 +128,21 @@
     'use strict';
 
     const CATEGORIES = [
-      { min:0,  max:14,  key:'start',     label:'Börja Din Resa',       emoji:'🌱', cssClass:'result-category--start',     color:'#e74c3c', desc:'Du har stor potential att förbättra din longevity. Varje litet steg räknas – börja med en förändring i taget.', percentile:'Topp 69–100 %' },
-      { min:15, max:24,  key:'improve',   label:'Förbättringspotential', emoji:'🌿', cssClass:'result-category--improve',   color:'#f39c12', desc:'Du har en bra grund att bygga vidare på. Med riktade förändringar kan du betydligt förbättra din longevity.', percentile:'Topp 47–68 %' },
-      { min:25, max:34,  key:'good',      label:'God Grund',             emoji:'🌳', cssClass:'result-category--good',      color:'#7fb069', desc:'Bra jobbat! Du lever redan på ett sätt som stödjer ett långt och hälsosamt liv. Finjustera för optimal effekt.', percentile:'Topp 25–46 %' },
-      { min:35, max:45,  key:'optimized', label:'Longevity Optimerare',  emoji:'🏆', cssClass:'result-category--optimized', color:'#4a7c59', desc:'Imponerande! Du tillhör toppen av longevity-praxis. Fortsätt underhålla dina utmärkta vanor.', percentile:'Topp 1–24 %' },
+      { min:0,  max:14,  key:'start',     label:'Börja din resa',        emoji:'🌱', cssClass:'result-category--start',     color:'#e74c3c', desc:'Du har stor potential att förbättra din longevity. Varje litet steg räknas – börja med en förändring i taget.', percentile:'Topp 69–100 %' },
+      { min:15, max:24,  key:'improve',   label:'Förbättringspotential', emoji:'🌿', cssClass:'result-category--improve',   color:'#f39c12', desc:'Du har en god grund att bygga vidare på. Med målinriktade förändringar kan du avsevärt förbättra din longevity.', percentile:'Topp 47–68 %' },
+      { min:25, max:34,  key:'good',      label:'God grund',              emoji:'🌳', cssClass:'result-category--good',      color:'#7fb069', desc:'Bra jobbat! Du lever redan på ett sätt som stödjer ett långt och hälsosamt liv. Finjustera för ännu bättre effekt.', percentile:'Topp 25–46 %' },
+      { min:35, max:45,  key:'optimized', label:'Longevity-optimerare',   emoji:'🏆', cssClass:'result-category--optimized', color:'#4a7c59', desc:'Imponerande! Du tillhör toppen inom longevity-praxis. Fortsätt med dina utmärkta vanor.', percentile:'Topp 1–24 %' },
     ];
 
     const BREAKDOWN_AREAS = [
       { label:'Rörelse & Träning',   emoji:'🏃', questions:[0,11], maxScore:6 },
       { label:'Sömn & Återhämtning', emoji:'😴', questions:[1,14], maxScore:6 },
-      { label:'Kost & Hydration',    emoji:'🥗', questions:[2,12], maxScore:6 },
+      { label:'Kost & vätskebalans',  emoji:'🥗', questions:[2,12], maxScore:6 },
       { label:'Mental hälsa',        emoji:'🧘', questions:[3],    maxScore:3 },
       { label:'Socialt liv',         emoji:'👫', questions:[4],    maxScore:3 },
       { label:'Livsstil',            emoji:'🌿', questions:[5,6],  maxScore:6 },
       { label:'Kognitiv hälsa',      emoji:'🧠', questions:[7],    maxScore:3 },
-      { label:'Natur & Förebyggande',emoji:'🌲', questions:[8,9],  maxScore:6 },
+      { label:'Natur & förebyggande', emoji:'🌲', questions:[8,9],  maxScore:6 },
     ];
 
     const RECOMMENDATIONS = {

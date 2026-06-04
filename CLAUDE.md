@@ -2,7 +2,7 @@
 
 ## Projektöversikt
 
-**Glädje & Harmoni** är ett svenskt longevity-verktyg som hjälper användare att förstå sin hälsoprofil och få personaliserade råd för ett längre, friskare liv. Kärnan i produkten är ett interaktivt quiz där användare svarar på frågor om livsstil, kost, sömn och träning — och sedan kan välja att få ett detaljerat resultat skickat till sin e-post.
+**Glädje & Harmoni** är ett svenskt longevity-verktyg som hjälper användare att förstå sin hälsoprofil och få personanpassade råd för ett längre, friskare liv. Kärnan i produkten är ett interaktivt quiz där användare svarar på frågor om livsstil, kost, sömn och träning — och sedan kan välja att få ett detaljerat resultat skickat till sin e-post.
 
 - **Primär funktion:** Longevity-quiz med email opt-in och MailerLite-leverans
 - **Målgrupp:** Svenskar 40–70 år med hälso- och longevity-intresse
@@ -186,7 +186,7 @@ Webhook-endpointen `/api/deploy` lyssnar på push till `main`-branchen och kör 
 
 ## GDPR-nyckelprinciper
 
-1. **Explicit consent** — opt-in-kryssrutan är obligatorisk och pre-unchecked
+1. **Explicit samtycke** — opt-in-kryssrutan är obligatorisk och förifylld-av (pre-unchecked)
 2. **Minimalt datainsamling** — quiz-svar lagras anonymt (ingen koppling till email)
 3. **Rätten att bli glömd** — soft delete + MailerLite-avregistrering
 4. **Dataportabilitet** — användare kan begära export av sina data

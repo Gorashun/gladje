@@ -8,14 +8,14 @@
 
 ### Vision
 
-Glädje & Harmoni ska bli Sveriges ledande digitala longevity-resursen — en tillgänglig, vetenskapligt förankrad och personaliserad guide för alla som vill investera i sitt långsiktiga välmående. Inte en medicinsk tjänst, utan en inspirerande och handlingsorienterad upplevelse.
+Glädje & Harmoni ska bli Sveriges ledande digitala longevity-resurs — en tillgänglig, vetenskapligt förankrad och personanpassad guide för alla som vill investera i sitt långsiktiga välmående. Inte en medicinsk tjänst, utan en inspirerande och handlingsorienterad upplevelse.
 
 ### Kärnprodukt (MVP)
 
 1. **Longevity-quiz** — 20–25 frågor som täcker livsstilsdomäner: kost, träning, sömn, stress, socialt liv, mentalt engagemang, miljö.
 2. **Resultatprofil** — Användaren får en "Longevity-poäng" (0–100) och placeras i en av fyra profiler: *Pionjären*, *Utforskaren*, *Grundaren*, *Startaren*.
-3. **Email opt-in** — Frivilligt: lämna sin e-post för att få den fullständiga rapporten + personaliserade råd skickade till inkorgen.
-4. **Nurture-sekvens** — Automatiserad email-sekvens via MailerLite som levererar värde under 4 veckor.
+3. **Email opt-in** — Frivilligt: lämna sin e-post för att få den fullständiga rapporten + personanpassade råd skickade till inkorgen.
+4. **Nurture-sekvens** — Automatiserad e-postsekvens via MailerLite som levererar värde under 4 veckor.
 
 ### Långsiktig vision (post-MVP)
 
@@ -149,8 +149,8 @@ Developer Push → GitHub PR → Review → Merge to main
 
 ### Implementationskrav (MVP)
 
-- [ ] Opt-in-formulär: Obligatorisk, pre-unchecked kryssruta med läsbar consent-text
-- [ ] Lagring av consent-tidsstämpel och consent-text-version
+- [ ] Opt-in-formulär: Obligatorisk, förifylld-av kryssruta med läsbar samtycketext
+- [ ] Lagring av samtyckestidsstämpel och samtyckestextversion
 - [ ] Privacy policy-sida länkad från opt-in
 - [ ] Cookie-banner (om cookies används)
 - [ ] Unsubscribe-länk i varje email (hanteras av MailerLite)
@@ -189,8 +189,8 @@ Developer Push → GitHub PR → Review → Merge to main
 
 - Nytt konto eller sub-grupp dedikerad till Glädje & Harmoni
 - Segment per quiz-profil (Pionjär, Utforskare, Grundare, Startare)
-- Automation per segment med personaliserade nurture-sekvenser
-- Double opt-in: Ja, för att uppfylla GDPR-best practice och hålla listan ren
+- Automation per segment med personanpassade nurture-sekvenser
+- Dubbelt samtycke (double opt-in): Ja, för att uppfylla GDPR:s bästa praxis och hålla listan ren
 
 ### Nyckelmetrik
 
