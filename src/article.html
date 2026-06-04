@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Läs vår evidensbaserade artikel om longevity – Glädje & Harmoni.">
+  <title id="page-title">Artikel – Glädje & Harmoni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="/" class="navbar__logo">
+            <span class="navbar__logo-leaf" aria-hidden="true">🌿</span>
+            <span>Glädje & Harmoni</span>
+          </a>
+          <div class="navbar__nav">
+            <a href="/#longevity">Om Longevity</a>
+            <a href="articles.html">Artiklar</a>
+            <a href="quiz.html">Ta quizet</a>
+          </div>
+          <a href="quiz.html" class="btn btn--primary btn--sm navbar__cta">Ta quizet →</a>
+          <button class="navbar__burger" aria-label="Öppna meny" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="navbar__mobile-menu" aria-label="Mobilmeny">
+          <a href="/#longevity">Om Longevity</a>
+          <a href="articles.html">Artiklar</a>
+          <a href="quiz.html">Ta quizet</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ARTIKEL HERO -->
+    <div id="article-hero" style="background:linear-gradient(135deg,var(--color-primary-dark),var(--color-primary));padding:var(--space-16) 0 var(--space-12);color:#fff;">
+      <div class="container container--narrow">
+        <nav aria-label="Brödsmulor" style="margin-bottom:var(--space-4);">
+          <ol style="display:flex;gap:var(--space-2);font-size:var(--text-sm);color:rgba(255,255,255,0.65);list-style:none;flex-wrap:wrap;">
+            <li><a href="/" style="color:rgba(255,255,255,0.65);">Hem</a></li>
+            <li aria-hidden="true" style="margin:0 var(--space-1);">/</li>
+            <li><a href="articles.html" style="color:rgba(255,255,255,0.65);">Artiklar</a></li>
+            <li aria-hidden="true" style="margin:0 var(--space-1);">/</li>
+            <li id="breadcrumb-title" style="color:rgba(255,255,255,0.9);">Artikel</li>
+          </ol>
+        </nav>
+        <div id="article-category-badge" class="badge badge--green" style="margin-bottom:var(--space-4);">Kost</div>
+        <h1 id="article-title" style="font-size:clamp(1.75rem,4vw,3rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:var(--space-4);">
+          Artikelrubrik
+        </h1>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;color:rgba(255,255,255,0.75);font-size:var(--text-sm);">
+          <span id="article-date">📅 15 mars 2024</span>
+          <span id="article-read">⏱ 5 min läsning</span>
+          <span>✅ Evidensbaserat</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTIKEL-LAYOUT -->
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- ARTIKELTEXT -->
+        <article class="article-content" aria-labelledby="article-title" id="article-body">
+          <!-- Fylls av JS baserat på slug -->
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="article-sidebar" aria-label="Relaterat innehåll">
+
+          <!-- Quiz CTA -->
+          <div class="card" style="padding:var(--space-5);text-align:center;margin-bottom:var(--space-5);">
+            <div style="font-size:2.5rem;margin-bottom:var(--space-3);" aria-hidden="true">🌿</div>
+            <h3 style="font-size:var(--text-lg);margin-bottom:var(--space-2);">Hur är just din longevity?</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-4);">
+              Ta vårt gratis quiz på 3 minuter och få din personliga analys.
+            </p>
+            <a href="quiz.html" class="btn btn--primary" style="width:100%;">Ta quizet →</a>
+          </div>
+
+          <!-- Relaterade artiklar -->
+          <div class="card" style="padding:var(--space-5);">
+            <h3 style="font-size:var(--text-base);font-weight:700;margin-bottom:var(--space-4);">Relaterade artiklar</h3>
+            <ul style="display:grid;gap:var(--space-3);">
+              <li>
+                <a href="article.html?slug=somn-aldrande" style="display:block;font-size:var(--text-sm);font-weight:500;color:var(--color-text);text-decoration:none;">
+                  😴 Sömnens roll i cellreparation och åldrande
+                </a>
+              </li>
+              <li>
+                <a href="article.html?slug=stress-aldrande" style="display:block;font-size:var(--text-sm);font-weight:500;color:var(--color-text);text-decoration:none;">
+                  🧘 Stress och åldrande – hur kronisk stress accelererar din biologiska ålder
+                </a>
+              </li>
+              <li>
+                <a href="article.html?slug=ikigai" style="display:block;font-size:var(--text-sm);font-weight:500;color:var(--color-text);text-decoration:none;">
+                  🧠 Ikigai – det japanska begreppet som ger 7 extra levnadsår
+                </a>
+              </li>
+              <li>
+                <a href="articles.html" style="display:block;font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-top:var(--space-2);">
+                  Alla artiklar →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:var(--space-6);">
+        <span class="footer__copy">© 2024 Glädje & Harmoni</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Integritetspolicy</a>
+          <a href="privacy.html#cookies">Cookies</a>
+          <a href="mailto:hej@gladjeochharmoni.se">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  /* ===== Artikel-template JS ===== */
+  (function() {
+    'use strict';
+
+    const ARTICLES = {
+      'medelhavskost': {
+        title:    'Medelhavskosten och dess effekt på livslängden',
+        category: 'Kost',
+        date:     '15 mars 2024',
+        readTime: '5 min läsning',
+        hero:     'linear-gradient(135deg,#7fb069,#4a7c59)',
+        emoji:    '🥦',
+        body: `
+          <h2>Vad är medelhavskosten?</h2>
+          <p>Medelhavskosten är ett ätmönster inspirerat av hur befolkningar längs Medelhavet traditionellt åt under 1950- och 60-talen – före globaliseringens genomslag. Det handlar inte om en strikt diet utan om ett livsmedelsmönster karaktäriserat av:</p>
+          <ul>
+            <li>Rikliga mängder olivolja, grönsaker, frukt, baljväxter och fullkorn</li>
+            <li>Måttliga mängder fisk och skaldjur</li>
+            <li>Begränsade mängder rött kött och processade livsmedel</li>
+            <li>Måttliga mängder vin till maten (frivilligt)</li>
+          </ul>
+
+          <h2>Vetenskapen bakom</h2>
+          <p>Den spanska PREDIMED-studien – en av de mest väldesignade kostinterventionsstudierna någonsin – följde 7 447 personer i hög kardiovaskulär risk. Resultaten var dramatiska:</p>
+          <blockquote>
+            Medelhavskosten minskade risken för hjärt-kärlhändelser med 30 % jämfört med en fettreducerad kost.
+            — New England Journal of Medicine, 2013
+          </blockquote>
+          <p>Utöver hjärt-kärlhälsa visar forskning på minskat inflammationsstatus, lägre risk för typ 2-diabetes, förbättrad kognitiv funktion och till och med längre telomerer – de molekylära markörerna för biologisk ålder.</p>
+
+          <h2>Tre enkla steg att börja</h2>
+          <p>Du behöver inte ändra allt på en gång. Börja med dessa tre åtgärder:</p>
+          <ol>
+            <li><strong>Byt ut smör mot olivolja</strong> vid all matlagning. Extra virgin olivolja innehåller oleocanthal – en naturlig COX-hämmare med anti-inflammatoriska egenskaper.</li>
+            <li><strong>Lägg till en näve nötter dagligen.</strong> En handfull valnötter, mandel eller pistagenötter ger hjärthälsosamma fetter och mättar utan att öka kroppsvikten.</li>
+            <li><strong>Ät fisk minst två gånger per vecka.</strong> Makrill, lax och sardiner är rika på EPA och DHA – omega-3-fettsyror kopplade till lägre inflammationsmarkörer.</li>
+          </ol>
+
+          <h2>Praktiska tips för svenska förhållanden</h2>
+          <p>Medelhavskosten behöver inte importeras rakt av. Du kan anpassa den till svenska råvaror:</p>
+          <ul>
+            <li>Ersätt tomat och aubergine med rotfrukter och kål</li>
+            <li>Välj svensk makrill och sill framför dyrare importerad fisk</li>
+            <li>Raps- och linolja är bra alternativ till olivolja för nordenproducerat fett</li>
+          </ul>
+
+          <h2>Slutsats</h2>
+          <p>Medelhavskosten är troligen det mest välstuderade kostmönstret i världen med konsistenta positiva effekter på hjärt-kärlhälsa, inflammation och kognitiv funktion. Det bästa med den är att den inte är restriktiv – den handlar om att lägga till hälsosamma livsmedel, inte att förbjuda.</p>
+          <p>Börja med ett steg idag. Ditt framtida jag tackar dig.</p>
+
+          <div style="background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:var(--space-5);margin-top:var(--space-8);">
+            <h3 style="font-size:var(--text-base);margin-bottom:var(--space-2);">📚 Källor</h3>
+            <ul style="font-size:var(--text-sm);color:var(--color-text-muted);">
+              <li>Estruch R. et al. (2013). PREDIMED Study. <em>New England Journal of Medicine</em>.</li>
+              <li>Sofi F. et al. (2010). Mediterranean diet and health. <em>BMJ</em>.</li>
+              <li>Trichopoulou A. (2003). Adherence to Mediterranean diet. <em>New England Journal of Medicine</em>.</li>
+            </ul>
+          </div>
+        `
+      },
+      '150-minuter': {
+        title:    '150 minuter per vecka – varför det är magiska siffran',
+        category: 'Träning',
+        date:     '10 mars 2024',
+        readTime: '4 min läsning',
+        body: `
+          <h2>WHO:s rekommendation och forskningen bakom</h2>
+          <p>Världshälsoorganisationen (WHO) rekommenderar 150–300 minuter måttlig aerob aktivitet per vecka för vuxna. Den nedre gränsen – 150 minuter – är inte godtycklig.</p>
+          <p>En meta-analys av 880 000 deltagare publicerad i <em>The Lancet</em> visade att just 150 minuter måttlig träning per vecka gav en 28 % lägre dödlighetsrisk jämfört med inaktivitet.</p>
+
+          <h2>Vad räknas som "måttlig" träning?</h2>
+          <p>Måttlig intensitet innebär att du kan prata men inte sjunga. Exempel:</p>
+          <ul>
+            <li>Rask promenad (>5 km/h)</li>
+            <li>Cykling i lugnt tempo</li>
+            <li>Simning</li>
+            <li>Trädgårdsarbete</li>
+            <li>Dans</li>
+          </ul>
+
+          <h2>Dela upp det över veckan</h2>
+          <p>150 minuter per vecka är 21 minuter per dag, eller 30 minuter fem dagar i veckan. Du behöver inte träna timmar i sträck – forskning visar att korta pass om 10 minuter är lika effektiva.</p>
+
+          <div style="background:var(--color-bg-alt);border-radius:var(--radius-lg);padding:var(--space-5);margin-top:var(--space-8);">
+            <h3 style="font-size:var(--text-base);margin-bottom:var(--space-2);">📚 Källor</h3>
+            <ul style="font-size:var(--text-sm);color:var(--color-text-muted);">
+              <li>WHO Guidelines on Physical Activity and Sedentary Behaviour (2020).</li>
+              <li>Arem H. et al. (2015). Leisure time physical activity and mortality. <em>JAMA Internal Medicine</em>.</li>
+            </ul>
+          </div>
+        `
+      },
+    };
+
+    // Default-artikel om slug inte finns
+    const DEFAULT_ARTICLE = {
+      title:    'Longevity – grunderna',
+      category: 'Longevity',
+      date:     '1 januari 2024',
+      readTime: '5 min läsning',
+      body: `
+        <h2>Välkommen till Glädje & Harmoni</h2>
+        <p>Den här artikeln laddas dynamiskt baserat på slug-parametern i URL:en. Lägg till <code>?slug=medelhavskost</code> för att se ett exempel.</p>
+        <p>Besök vår <a href="articles.html">artikelöversikt</a> för att se alla tillgängliga artiklar.</p>
+      `
+    };
+
+    function init() {
+      const params = new URLSearchParams(window.location.search);
+      const slug   = params.get('slug') || '';
+      const art    = ARTICLES[slug] || DEFAULT_ARTICLE;
+
+      document.getElementById('page-title').textContent      = `${art.title} – Glädje & Harmoni`;
+      document.getElementById('article-title').textContent   = art.title;
+      document.getElementById('article-date').textContent    = `📅 ${art.date}`;
+      document.getElementById('article-read').textContent    = `⏱ ${art.readTime}`;
+      document.getElementById('breadcrumb-title').textContent = art.title;
+      document.getElementById('article-category-badge').textContent = art.category;
+      document.getElementById('article-body').innerHTML       = art.body;
+
+      if (art.hero) {
+        document.getElementById('article-hero').style.background = art.hero;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
+  </script>
+</body>
+</html>

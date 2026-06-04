@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Evidensbaserade artiklar om longevity, kost, träning, sömn och mental hälsa – från Glädje & Harmoni.">
+  <title>Artiklar om Longevity – Glädje & Harmoni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="/" class="navbar__logo">
+            <span class="navbar__logo-leaf" aria-hidden="true">🌿</span>
+            <span>Glädje & Harmoni</span>
+          </a>
+          <div class="navbar__nav">
+            <a href="/#longevity">Om Longevity</a>
+            <a href="articles.html" aria-current="page">Artiklar</a>
+            <a href="quiz.html">Ta quizet</a>
+          </div>
+          <a href="quiz.html" class="btn btn--primary btn--sm navbar__cta">Ta quizet →</a>
+          <button class="navbar__burger" aria-label="Öppna meny" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="navbar__mobile-menu" aria-label="Mobilmeny">
+          <a href="/#longevity">Om Longevity</a>
+          <a href="articles.html">Artiklar</a>
+          <a href="quiz.html">Ta quizet</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section style="background:linear-gradient(160deg,var(--color-primary-dark),var(--color-primary));color:#fff;padding:var(--space-16) 0 var(--space-12);">
+      <div class="container" style="text-align:center;">
+        <span class="section__label" style="color:rgba(255,255,255,0.7);">Kunskap & Inspiration</span>
+        <h1 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:#fff;margin-bottom:var(--space-4);">
+          Longevity-artiklar
+        </h1>
+        <p style="font-size:var(--text-lg);color:rgba(255,255,255,0.8);max-width:560px;margin:0 auto;">
+          Evidensbaserade artiklar om kost, träning, sömn och mental hälsa – skrivet för dig som vill leva längre och bättre.
+        </p>
+      </div>
+    </section>
+
+    <!-- ARTIKLAR + FILTER -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Sök -->
+        <div class="search-bar" role="search" aria-label="Sök artiklar">
+          <input type="search" class="search-input" placeholder="Sök artiklar…" aria-label="Sök artiklar">
+          <button class="btn btn--primary btn--sm" aria-label="Sök">Sök</button>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-bar" role="group" aria-label="Filtrera per kategori">
+          <button class="filter-btn active" data-cat="all">Alla</button>
+          <button class="filter-btn" data-cat="kost">🥗 Kost</button>
+          <button class="filter-btn" data-cat="traning">🏃 Träning</button>
+          <button class="filter-btn" data-cat="somn">😴 Sömn</button>
+          <button class="filter-btn" data-cat="mental">🧘 Mental hälsa</button>
+          <button class="filter-btn" data-cat="socialt">👫 Socialt</button>
+        </div>
+
+        <!-- Artikel-grid -->
+        <div class="articles-grid">
+
+          <article class="card article-card" data-cat="kost">
+            <div style="background:linear-gradient(135deg,#7fb069,#4a7c59);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🥦</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Kost</span>
+                <span>5 min</span>
+                <time datetime="2024-03-15">15 mars 2024</time>
+              </div>
+              <h2 class="card__title">Medelhavskosten och dess effekt på livslängden</h2>
+              <p class="card__excerpt">Forskning visar att medelhavskosten minskar risken för hjärt-kärlsjukdomar med upp till 30 %. Så här lägger du om din kost steg för steg.</p>
+              <a href="article.html?slug=medelhavskost" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="traning">
+            <div style="background:linear-gradient(135deg,#c9a84c,#a8893e);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🏃</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--gold">Träning</span>
+                <span>4 min</span>
+                <time datetime="2024-03-10">10 mars 2024</time>
+              </div>
+              <h2 class="card__title">150 minuter per vecka – varför det är magiska siffran</h2>
+              <p class="card__excerpt">WHO:s rekommendation om 150 minuter måttlig träning per vecka är inte godtycklig. Här är vetenskapen bakom rekommendationen.</p>
+              <a href="article.html?slug=150-minuter" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="somn">
+            <div style="background:linear-gradient(135deg,#4a7c59,#2e5236);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">😴</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Sömn</span>
+                <span>6 min</span>
+                <time datetime="2024-03-05">5 mars 2024</time>
+              </div>
+              <h2 class="card__title">Sömnens roll i cellreparation och åldrande</h2>
+              <p class="card__excerpt">Under djupsömnen reparerar kroppen DNA-skador och rensar bort avfallsprodukter från hjärnan. Så optimerar du din sömn.</p>
+              <a href="article.html?slug=somn-aldrande" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="mental">
+            <div style="background:linear-gradient(135deg,#9b59b6,#6c3483);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🧘</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge" style="background:rgba(155,89,182,0.12);color:#6c3483;">Mental hälsa</span>
+                <span>7 min</span>
+                <time datetime="2024-02-28">28 feb 2024</time>
+              </div>
+              <h2 class="card__title">Stress och åldrande – hur kronisk stress accelererar din biologiska ålder</h2>
+              <p class="card__excerpt">Kronisk stress förkortar telomererna – de skyddande "lock" på dina kromosomer som bestämmer cellernas ålder. Här är fem evidensbaserade stresshanteringstekniker.</p>
+              <a href="article.html?slug=stress-aldrande" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="socialt">
+            <div style="background:linear-gradient(135deg,#3498db,#2980b9);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">👫</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge" style="background:rgba(52,152,219,0.12);color:#2980b9;">Socialt</span>
+                <span>5 min</span>
+                <time datetime="2024-02-20">20 feb 2024</time>
+              </div>
+              <h2 class="card__title">Varför ensamhet är en lika stor hälsorisk som rökning</h2>
+              <p class="card__excerpt">Harvard-studien som följde 700 personer i 80 år fann att nära relationer är den starkaste prediktorn för ett långt och lyckligt liv. Allt annat är sekundärt.</p>
+              <a href="article.html?slug=ensamhet-halsa" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="kost">
+            <div style="background:linear-gradient(135deg,#27ae60,#1e8449);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🫙</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Kost</span>
+                <span>6 min</span>
+                <time datetime="2024-02-15">15 feb 2024</time>
+              </div>
+              <h2 class="card__title">Tarmhälsa och longevity – fermenterad mat som anti-aging</h2>
+              <p class="card__excerpt">Dina tarmbakterier kommunicerar med hjärnan, immunsystemet och till och med generna. En hälsosam mikrobiom är kärnan i longevity-forskningen.</p>
+              <a href="article.html?slug=tarmhalsa" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="traning">
+            <div style="background:linear-gradient(135deg,#e67e22,#d35400);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🏋️</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--gold">Träning</span>
+                <span>5 min</span>
+                <time datetime="2024-02-10">10 feb 2024</time>
+              </div>
+              <h2 class="card__title">Styrketräning efter 50 – varför det är viktigare än du tror</h2>
+              <p class="card__excerpt">Muskelmassa minskar med åldern (sarcopeni) och är en stark prediktor för för tidig död. Styrketräning 2 ggr/vecka motverkar detta effektivt.</p>
+              <a href="article.html?slug=styrketraning-50" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="mental">
+            <div style="background:linear-gradient(135deg,#1abc9c,#16a085);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🧠</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge" style="background:rgba(26,188,156,0.12);color:#16a085;">Mental hälsa</span>
+                <span>8 min</span>
+                <time datetime="2024-02-05">5 feb 2024</time>
+              </div>
+              <h2 class="card__title">Ikigai – det japanska begreppet som kan ge dig 7 extra levnadsår</h2>
+              <p class="card__excerpt">Befolkningen på Okinawa – världens längst levande – har ett ord för sin livsmening: Ikigai. Forskning visar att ett starkt syfte minskar dödlighetsrisken med 23 %.</p>
+              <a href="article.html?slug=ikigai" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+          <article class="card article-card" data-cat="somn">
+            <div style="background:linear-gradient(135deg,#2c3e50,#34495e);height:200px;display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🌙</div>
+            <div class="card__body">
+              <div class="card__meta">
+                <span class="badge badge--green">Sömn</span>
+                <span>4 min</span>
+                <time datetime="2024-01-30">30 jan 2024</time>
+              </div>
+              <h2 class="card__title">Circadiansk rytm – din kroppsklockas avgörande roll för hälsa</h2>
+              <p class="card__excerpt">Din biologiska klocka styr allt från hormonproduktion till immunförsvar. Att leva i synk med den kan förlänga livet markant.</p>
+              <a href="article.html?slug=circadian-rytm" class="card__link">Läs artikel →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark" aria-labelledby="articles-cta">
+      <div class="container" style="text-align:center;">
+        <h2 class="section__title" id="articles-cta" style="color:#fff;">Redo att ta nästa steg?</h2>
+        <p style="color:rgba(255,255,255,0.75);margin-bottom:var(--space-6);">Ta vårt longevity-quiz och få en personlig analys av din hälsoprofil.</p>
+        <a href="quiz.html" class="btn btn--gold btn--lg">Ta quizet nu →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:var(--space-6);">
+        <span class="footer__copy">© 2024 Glädje & Harmoni</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Integritetspolicy</a>
+          <a href="privacy.html#cookies">Cookies</a>
+          <a href="mailto:hej@gladjeochharmoni.se">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
