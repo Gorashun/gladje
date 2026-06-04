@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ditt longevity-resultat – Glädje & Harmoni. Se din personliga analys och top 3 rekommendationer.">
+  <title>Ditt Longevity-Resultat – Glädje & Harmoni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Huvudnavigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="/" class="navbar__logo">
+            <span class="navbar__logo-leaf" aria-hidden="true">🌿</span>
+            <span>Glädje & Harmoni</span>
+          </a>
+          <div class="navbar__nav">
+            <a href="articles.html">Artiklar</a>
+            <a href="quiz.html">Ta om quizet</a>
+          </div>
+          <a href="quiz.html" class="btn btn--primary btn--sm navbar__cta">Ta om quizet</a>
+          <button class="navbar__burger" aria-label="Öppna meny" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="navbar__mobile-menu" aria-label="Mobilmeny">
+          <a href="articles.html">Artiklar</a>
+          <a href="quiz.html">Ta om quizet</a>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <main id="result-page">
+
+    <!-- RESULTAT HERO (fylls av JS) -->
+    <section class="result-hero" aria-labelledby="result-title">
+      <div class="container" style="text-align:center;">
+        <div id="result-emoji" style="font-size:5rem;margin-bottom:var(--space-4);" aria-hidden="true">🌿</div>
+        <span id="result-category-badge" class="result-category result-category--good">God Grund</span>
+        <div id="result-score" class="result-score" aria-label="Poäng">–</div>
+        <h1 class="result-title" id="result-title">Ditt longevity-resultat</h1>
+        <p class="result-desc" id="result-desc"></p>
+        <div style="margin-top:var(--space-6);display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:center;">
+          <span id="result-percentile" style="background:rgba(255,255,255,0.15);color:#fff;padding:0.4em 1em;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KATEGORI-BREAKDOWN -->
+    <section class="section" aria-labelledby="breakdown-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Analys</span>
+          <h2 class="section__title" id="breakdown-title">Din longevity-profil</h2>
+          <p class="section__subtitle">Så här fördelar sig dina svar per hälsokategori.</p>
+        </div>
+        <div class="result-breakdown" id="result-breakdown">
+          <!-- Fylls av JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP 3 REKOMMENDATIONER -->
+    <section class="section section--alt" aria-labelledby="recs-title">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="section__label">Personliga råd</span>
+          <h2 class="section__title" id="recs-title">Dina topp 3 förbättringsområden</h2>
+          <p class="section__subtitle" id="recs-subtitle">Baserat på dina svar har vi identifierat dessa prioriterade områden.</p>
+        </div>
+        <div id="recommendations" style="display:grid;gap:var(--space-5);">
+          <!-- Fylls av JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- DELA -->
+    <section class="section" aria-label="Dela ditt resultat">
+      <div class="container container--narrow" style="text-align:center;">
+        <span class="section__label">Nästa steg</span>
+        <h2 class="section__title">Vad gör du nu?</h2>
+        <p style="color:var(--color-text-muted);margin-bottom:var(--space-8);">
+          Longevity-resan börjar med ett steg. Utforska våra artiklar, dela resultatet med en vän eller ta quizet igen om 3 månader för att mäta din progress.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center;">
+          <a href="articles.html" class="btn btn--primary btn--lg">📚 Läs longevity-artiklar</a>
+          <a href="quiz.html" class="btn btn--secondary btn--lg">🔄 Ta quizet igen</a>
+        </div>
+        <div style="margin-top:var(--space-8);">
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Dela ditt resultat:</p>
+          <div style="display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap;">
+            <button id="share-link" class="btn btn--ghost btn--sm">🔗 Kopiera länk</button>
+            <a id="share-twitter" href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">𝕏 Dela på X</a>
+          </div>
+          <p id="copy-confirm" style="font-size:var(--text-sm);color:var(--color-success);margin-top:var(--space-2);display:none;">Länk kopierad! ✓</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;">
+        <span class="footer__copy">© 2024 Glädje & Harmoni</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Integritetspolicy</a>
+          <a href="privacy.html#cookies">Cookies</a>
+          <a href="mailto:hej@gladjeochharmoni.se">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  /* ===== Results-page JS ===== */
+  (function() {
+    'use strict';
+
+    const CATEGORIES = [
+      { min:0,  max:14,  key:'start',     label:'Börja Din Resa',       emoji:'🌱', cssClass:'result-category--start',     color:'#e74c3c', desc:'Du har stor potential att förbättra din longevity. Varje litet steg räknas – börja med en förändring i taget.', percentile:'Topp 69–100 %' },
+      { min:15, max:24,  key:'improve',   label:'Förbättringspotential', emoji:'🌿', cssClass:'result-category--improve',   color:'#f39c12', desc:'Du har en bra grund att bygga vidare på. Med riktade förändringar kan du betydligt förbättra din longevity.', percentile:'Topp 47–68 %' },
+      { min:25, max:34,  key:'good',      label:'God Grund',             emoji:'🌳', cssClass:'result-category--good',      color:'#7fb069', desc:'Bra jobbat! Du lever redan på ett sätt som stödjer ett långt och hälsosamt liv. Finjustera för optimal effekt.', percentile:'Topp 25–46 %' },
+      { min:35, max:45,  key:'optimized', label:'Longevity Optimerare',  emoji:'🏆', cssClass:'result-category--optimized', color:'#4a7c59', desc:'Imponerande! Du tillhör toppen av longevity-praxis. Fortsätt underhålla dina utmärkta vanor.', percentile:'Topp 1–24 %' },
+    ];
+
+    const BREAKDOWN_AREAS = [
+      { label:'Rörelse & Träning',   emoji:'🏃', questions:[0,11], maxScore:6 },
+      { label:'Sömn & Återhämtning', emoji:'😴', questions:[1,14], maxScore:6 },
+      { label:'Kost & Hydration',    emoji:'🥗', questions:[2,12], maxScore:6 },
+      { label:'Mental hälsa',        emoji:'🧘', questions:[3],    maxScore:3 },
+      { label:'Socialt liv',         emoji:'👫', questions:[4],    maxScore:3 },
+      { label:'Livsstil',            emoji:'🌿', questions:[5,6],  maxScore:6 },
+      { label:'Kognitiv hälsa',      emoji:'🧠', questions:[7],    maxScore:3 },
+      { label:'Natur & Förebyggande',emoji:'🌲', questions:[8,9],  maxScore:6 },
+    ];
+
+    const RECOMMENDATIONS = {
+      start: [
+        { icon:'🏃', title:'Börja röra på dig mer', text:'Promenera 20 minuter om dagen – det räcker för att få mätbara hälsoeffekter. Du behöver inte gymma, bara börja röra på dig.' },
+        { icon:'🥗', title:'Lägg till en grönsaksportion per dag', text:'Öka ditt intag av grönsaker gradvis. Försök nå "tallriksmodellen": hälften grönsaker, en fjärdedel protein och en fjärdedel kolhydrater.' },
+        { icon:'😴', title:'Prioritera 7–8 timmars sömn', text:'Sömn är kroppens starkaste återhämtningsverktyg. Sätt en fast sovtid och minska skärmtid 1 timme innan läggdags.' },
+      ],
+      improve: [
+        { icon:'🧘', title:'Inför en daglig stundpaus', text:'5 minuter medveten andning på morgonen minskar stresshormonet kortisol med upp till 25 %. Börja litet – prova Headspace eller Wim Hof-metoden.' },
+        { icon:'👫', title:'Stärk dina sociala band', text:'Ensamhet är lika skadligt som att röka 15 cigaretter om dagen. Boka in regelbunden tid med familj och vänner – inte "när du hinner".' },
+        { icon:'🔬', title:'Boka en hälsokontroll', text:'En enkel blodprovskontroll kan avslöja tidiga varningssignaler som du inte märker själv. Ring din vårdcentral och boka en tid.' },
+      ],
+      good: [
+        { icon:'🧠', title:'Utmana din hjärna', text:'Lär dig något nytt – ett språk, ett instrument, ett hantverk. Kontinuerligt lärande bygger "kognitiv reserv" som skyddar mot demens.' },
+        { icon:'🌿', title:'Optimera din kost', text:'Du äter redan bra – ta nästa steg med tidsbegränsat ätande (16:8) eller öka andelen fermenterad mat för bättre tarmhälsa.' },
+        { icon:'🌲', title:'Lägg till daglig naturvistelse', text:'Shinrin-yoku (skogsbadning) sänker blodtrycket och stresshormonerna. Sträva efter 20 minuter i grönska varje dag.' },
+      ],
+      optimized: [
+        { icon:'🔬', title:'Fördjupa dina hälsokontroller', text:'Överväg mer avancerade biomarkörer: telomerlängd, inflammationsmarkörer (hsCRP), eller kontinuerlig glukosövervakning för djupare insikter.' },
+        { icon:'🧘', title:'Finslipa din återhämtning', text:'Utforska evidensbaserade tekniker som kryoterapi, saunabadning (4–7 ggr/vecka) eller HRV-baserad träningsplanering.' },
+        { icon:'👥', title:'Dela din kunskap', text:'Att mentalt engagera sig i att hjälpa andra ökar livslängden. Fundera på mentorskap, frivillighetsarbete eller att lära ut det du kan.' },
+      ],
+    };
+
+    function getCategory(score) {
+      return CATEGORIES.find(c => score >= c.min && score <= c.max) || CATEGORIES[0];
+    }
+
+    function getAnswers() {
+      // Hämta från URL-params (enkla poäng) eller sessionStorage
+      const params = new URLSearchParams(window.location.search);
+      const score  = parseInt(params.get('score') || '0', 10);
+      const cat    = params.get('cat') || '';
+      return { score, cat };
+    }
+
+    function renderBreakdown(answers) {
+      const container = document.getElementById('result-breakdown');
+      if (!container || !answers || answers.length < 15) {
+        container.innerHTML = '<p style="text-align:center;color:var(--color-text-muted);">Öppna sidan från quizet för att se detaljerad analys.</p>';
+        return;
+      }
+      container.innerHTML = BREAKDOWN_AREAS.map(area => {
+        const score = area.questions.reduce((s, qi) => s + (answers[qi] || 0), 0);
+        const pct   = Math.round((score / area.maxScore) * 100);
+        const color = pct >= 70 ? '#4a7c59' : pct >= 40 ? '#f39c12' : '#e74c3c';
+        return `
+          <div class="breakdown-item">
+            <div class="breakdown-item__header">
+              <span class="breakdown-item__title">${area.emoji} ${area.label}</span>
+              <span class="breakdown-item__score">${score}/${area.maxScore}</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width:${pct}%;background:${color};"></div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function renderRecommendations(catKey) {
+      const container = document.getElementById('recommendations');
+      if (!container) return;
+      const recs = RECOMMENDATIONS[catKey] || RECOMMENDATIONS.improve;
+      container.innerHTML = recs.map((rec, i) => `
+        <div class="card" style="padding:var(--space-5);display:flex;gap:var(--space-4);align-items:flex-start;">
+          <div style="flex-shrink:0;font-size:2rem;line-height:1;" aria-hidden="true">${rec.icon}</div>
+          <div>
+            <h3 style="font-size:var(--text-xl);margin-bottom:var(--space-2);">${i+1}. ${rec.title}</h3>
+            <p style="color:var(--color-text-muted);margin:0;">${rec.text}</p>
+          </div>
+        </div>`).join('');
+    }
+
+    function init() {
+      const { score, cat } = getAnswers();
+      const category = getCategory(score);
+
+      // Hero
+      const emojiEl    = document.getElementById('result-emoji');
+      const badgeEl    = document.getElementById('result-category-badge');
+      const scoreEl    = document.getElementById('result-score');
+      const descEl     = document.getElementById('result-desc');
+      const percEl     = document.getElementById('result-percentile');
+
+      if (emojiEl) emojiEl.textContent = category.emoji;
+      if (badgeEl) {
+        badgeEl.textContent = category.label;
+        badgeEl.className   = `result-category ${category.cssClass}`;
+      }
+      if (scoreEl) scoreEl.textContent = `${score}/45`;
+      if (descEl)  descEl.textContent  = category.desc;
+      if (percEl)  percEl.textContent  = `📊 ${category.percentile} av alla deltagare`;
+
+      // Dokument-titel
+      document.title = `${category.emoji} ${category.label} – Glädje & Harmoni`;
+
+      // Breakdown (behöver answers från sessionStorage om JS kört quiz)
+      const storedAnswers = tryGetStoredAnswers();
+      renderBreakdown(storedAnswers);
+      renderRecommendations(category.key);
+
+      // Dela
+      const shareBtn = document.getElementById('share-link');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            const confirm = document.getElementById('copy-confirm');
+            if (confirm) { confirm.style.display = ''; setTimeout(() => confirm.style.display='none', 2500); }
+          });
+        });
+      }
+      const twitterEl = document.getElementById('share-twitter');
+      if (twitterEl) {
+        const text = encodeURIComponent(`Jag fick kategorin "${category.label}" (${score}/45) i Glädje & Harmonins longevity-quiz! Ta du quizet:`);
+        twitterEl.href = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent('https://gladjeochharmoni.se/quiz.html')}`;
+      }
+    }
+
+    function tryGetStoredAnswers() {
+      try {
+        const raw = sessionStorage.getItem('gh_quiz_answers');
+        if (raw) return JSON.parse(raw);
+      } catch(e) {}
+      return null;
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
+  </script>
+</body>
+</html>
